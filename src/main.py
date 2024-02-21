@@ -1,6 +1,8 @@
 import os
 import json
 import shutil
+import openpyxl
+from threading import Thread
 import pandas as pd
 
 dicionario = {

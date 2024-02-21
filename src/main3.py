@@ -15,6 +15,6 @@ for prompt, conteudo in sheet.iter_rows(min_row=2, max_row=sheet.max_row, values
                 palavras.insert(-1,nome_bot)
                 prompt = '_'.join(palavras)
             user_prompt = api_genesys.create_new_user_prompt(prompt, description)
-            api_genesys.create_new_user_prompt_resource(user_prompt['id'], 'pt-br', conteudo, conteudo)
+            user_prompt_resource = api_genesys.create_new_user_prompt_resource(user_prompt['id'], 'pt-br', conteudo, conteudo)
     except Exception as error:
         print(f'Erro: {error}\n{prompt=}')
