@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='PromptsAutomation',
-    version='1.0',
+    version='1.2',
     packages=find_packages(),
     author='Matheus Almeida Santos Mendonça',
     author_email='matheuzengenharia@gmail.com',
